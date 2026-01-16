@@ -1,0 +1,128 @@
+/* Reset basique */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+
+/* Navbar */
+/* --- public/css/style.css --- */
+
+nav {
+    background: #2c3e50;
+    padding: 0 2rem;
+    height: 70px; /* Hauteur fixe pour que tout soit bien centré */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sépare Gauche - Centre - Droite */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 1. Zone GAUCHE (Logo) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: fit-content;
+}
+
+/* 2. Zone CENTRE (Liens principaux) */
+.nav-center {
+    flex: 1; /* Prend toute la place disponible au milieu */
+    display: flex;
+    justify-content: center; /* Centre les liens horizontalement */
+    align-items: center;
+    gap: 80px; /* Espace entre les liens du milieu */
+}
+
+/* 3. Zone DROITE (Profil / Auth) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 200px; /* Réserve de l'espace pour équilibrer la gauche */
+    gap: 15px;
+}
+
+/* Styles des liens (Pour qu'ils soient beaux partout) */
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Style spécifique pour le Logo */
+.brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Bouton Déconnexion (Style pilule rouge) */
+.btn-logout {
+    background: #e74c3c;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn-logout:hover {
+    background: #c0392b;
+}
+/* Conteneur */
+.container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+
+/* Tableaux */
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+th { background-color: #34495e; color: white; }
+tr:hover { background-color: #f1f1f1; }
+
+/* Formulaires */
+.form-group { margin-bottom: 1rem; }
+input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+button { padding: 10px 15px; background: #3498db; color: white; border: none; cursor: pointer; border-radius: 4px; }
+button:hover { background: #2980b9; }
+button.danger { background: #e74c3c; }
+button.success { background: #2ecc71; }
+
+/* Alertes */
+.alert { padding: 10px; margin-bottom: 1rem; border-radius: 4px; }
+.alert-success { background: #d4edda; color: #155724; }
+.alert-error { background: #f8d7da; color: #721c24; }
+/* 1. On s'assure que la page prend au moins 100% de la hauteur de l'écran */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. On garde tes styles existants pour le body */
+body { 
+    background-color: #f4f7f6; 
+    color: #333; 
+    line-height: 1.6; 
+    font-family: 'Segoe UI', sans-serif; /* Rappel de ta police */
+}
+
+/* 3. L'astuce magique : le conteneur principal grandit pour pousser le footer */
+.container {
+    flex: 1; /* Occupe tout l'espace vide disponible */
+    width: 100%; /* S'assure qu'il reste large */
+    max-width: 1000px; 
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+}
