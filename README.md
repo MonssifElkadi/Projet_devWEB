@@ -247,7 +247,7 @@ PFMDEV-FINAL-VERSION/
 │   └── logs/
 ├── tests/                # Test suite
 ├── vendor/               # Composer dependencies
-├── video/                # Project videos
+├── Le video est dans : https://drive.google.com/file/d/1LqLyLa8O2FSwP7DfM2IWZrRyRNK6ulYg/view?usp=sharing               # Project videos
 └── vite.config.js        # Vite configuration
 ```
 
@@ -352,8 +352,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Support
 
-For issues and questions, please open an issue on the GitHub repository.
-
----
+Le lien de video : https://drive.google.com/file/d/1LqLyLa8O2FSwP7DfM2IWZrRyRNK6ulYg/view?usp=sharing
 
 **Last Updated**: January 2026
